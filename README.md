@@ -1,7 +1,7 @@
 # content-model
 ##概要
 トピックモデル(latent dirichlet allocation)をPythonで実装
-##lda.pyの使い方(コンテンツモデル)
+##lda.pyの使い方(トピックモデル)
 ```python
 # Sample code.
 from lda import LDA
