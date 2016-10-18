@@ -28,3 +28,35 @@ lda.output_model()
 ...
 ```
 例として[Wiki.py](https://github.com/KentoW/wiki)を使用して収集した アニメのあらすじ文章をdata.txtに保存
+##出力フォーマット
+必要な情報は各自で抜き取って使用してください．
+```
+model	lda                             # 学習の種類
+@parameter
+corpus_file	data.txt                    # トレーニングデータのPATH
+hyper_parameter_alpha	1.834245        # ハイパーパラメータalpha
+hyper_parameter_beta	0.089558        # ハイパーパラメータbeta
+number_of_topic	10          # トピック数
+number_of_iteration	121     # 収束した時のイテレーション回数
+@likelihood         # 尤度
+initial likelihood	-1389.55970144
+last likelihood	-1382.11395248
+@vocaburary         # 学習で使用した単語v
+target_word	出産
+target_word	拓き
+target_word	土
+target_word	吉日
+target_word	遂げる
+...
+@count
+m_z	0	15800   
+m_z_v	0	の	1064
+m_z_v	0	に	688
+m_z_v	0	て	578
+m_z_v	0	が	565
+m_z_v	0	は	564
+m_z_v	0	を	544
+m_z_v	0	で	520
+m_z_v	0	と	457
+...
+```
