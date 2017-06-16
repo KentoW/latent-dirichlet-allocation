@@ -1,7 +1,7 @@
 # content-model
-##概要
+## 概要
 トピックモデル(latent dirichlet allocation)をPythonで実装
-##lda.pyの使い方(トピックモデル)
+## lda.pyの使い方(トピックモデル)
 ```python
 # Sample code.
 from lda import LDA
@@ -17,7 +17,7 @@ lda.set_param(alpha, beta, K, N, converge)
 lda.learn()
 lda.output_model()
 ```
-##入力フォーマット
+## 入力フォーマット
 1単語をスペースで分割した1行1文書形式  
 先頭に#(シャープ)記号を入れてコメントを記述可能
 ```
@@ -28,7 +28,7 @@ lda.output_model()
 ...
 ```
 例として[Wiki.py](https://github.com/KentoW/wiki)を使用して収集した アニメのあらすじ文章をdata.txtに保存
-##出力フォーマット
+## 出力フォーマット
 必要な情報は各自で抜き取って使用してください．
 ```
 model	lda                             # 学習の種類
